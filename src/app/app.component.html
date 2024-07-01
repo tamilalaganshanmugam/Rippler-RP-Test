@@ -1,0 +1,8 @@
+
+  <div class="cards" *ngIf="ProductList">
+
+      <div class="cards_item" *ngFor="let val of ProductList;index as id">
+        <app-card-grid [productInfo]="val" [productId]="id"></app-card-grid>
+      </div>
+    
+  </div>
